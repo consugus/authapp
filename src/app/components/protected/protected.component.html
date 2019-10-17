@@ -1,0 +1,9 @@
+<div class="container m-5">
+  <h3>Información de usuario</h3>
+
+  <!-- Se imprime entre las etiquetas pre porque lo que se va a mostrar es un json crudo -->
+  <pre *ngIf="auth.userProfile$ | async as profile">
+    <code>{{ profile | json }}</code>
+  </pre>
+
+</div>
